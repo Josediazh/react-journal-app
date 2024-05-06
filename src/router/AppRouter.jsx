@@ -18,6 +18,10 @@ export const AppRouter = () => {
   status == 'authenticated'  
   ?[
     {
+      path: "*/",
+      element: <Navigate to="/" />,
+    },
+    {
       path: "/*",
       element: <Navigate to="/" />,
     },
@@ -34,6 +38,10 @@ export const AppRouter = () => {
     },
     ]
   :[
+    {
+      path: "*/",
+      element: <LoginPage />,
+    },
     {
       path: "/",
       element: <LoginPage />,
