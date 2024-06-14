@@ -33,6 +33,7 @@ export const RegisterPage = () => {
     event.preventDefault();
     onFormValidate();
 
+    console.log(formState);
     dispatch(registerUser(formState));
   }
 

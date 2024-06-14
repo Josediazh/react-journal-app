@@ -45,7 +45,7 @@ export const startGoogleSighIn = () => {
     }
 }
 
-export const registerUser = ({email,password}) => {
+export const registerUser = ({email,password,fullName}) => {
     return async ( dispatch ) => {
         dispatch(checkingCredential());
 
